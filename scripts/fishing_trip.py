@@ -22,7 +22,7 @@ from sklearn.linear_model import LinearRegression
 import fun
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.externals import joblib
+import pickle
 
 
 
@@ -76,6 +76,11 @@ unique_user_id_4 = df_user_onset_date['user_id'].unique()
 CONDITION_MAP = {}
 for i in range(len(unique_conditon)):
     CONDITION_MAP[unique_conditon[i]] = i
+# save to file
+constant_file = script_path + '/CONDITION_MAP.sav'
+pickle.dump(CONDITION_MAP, open(constant_file, 'wb'))
+# Load from file
+CONDITION_MAP = pickle.load(open(constant_file, 'rb'))
 
 # symptom map 
 # use only top 500 symptoms
@@ -84,6 +89,11 @@ n = 300
 top_n_symptom = df_user_symptoms['symptom_name'].value_counts()[:n].index.tolist()
 for i in range(len(top_n_symptom)):
     SYMPTOM_MAP[top_n_symptom[i]] = i
+# save to file
+constant_file = script_path + '/SYMPTOM_MAP.sav'
+pickle.dump(SYMPTOM_MAP, open(constant_file, 'wb'))
+# Load from file
+SYMPTOM_MAP = pickle.load(open(constant_file, 'rb'))
 
 ################################################################################
 ## predict progression rate based on condition
@@ -98,8 +108,8 @@ progression_speed = []
 for user_id in training_user_id:
     #print(user_id)
     user_progression = df_ASL_progression[df_ASL_progression['user_id'] == user_id]
-    m = fun.getProgressionspeed(user_progression)
-    progression_speed.append(m)
+    m, b= fun.getProgressionspeed(user_progression)
+    progression_speed.append([m, b])
 
 # build predictors that is the condtions each user have
 have_conditions = []
@@ -115,13 +125,11 @@ y = np.asarray(progression_speed)
 reg = LinearRegression().fit(X, y)
 reg.score(X, y)
 
-
 # Save to file in the current working directory
-model_file = script_path + '/trained_models/progression_model.pkl'
-joblib.dump(reg, model_file)
-
+model_file = script_path + '/trained_models/progression_model.sav'
+pickle.dump(reg, open(model_file, 'wb'))
 # Load from file
-reg = joblib.load(model_file)
+reg = pickle.load(open(model_file, 'rb'))
 
 # run test on test user_id
 progression_speed_test = []
@@ -139,10 +147,9 @@ for user_id in testing_user_id:
 
 progression_speed_predicted = reg.predict(have_conditions_test)
 
-plt.plot(progression_speed_test, '-o')
-plt.plot(progression_speed_predicted, '-o')
-plt.show()
-
+#plt.plot(progression_speed_test, '-o')
+#plt.plot(progression_speed_predicted, '-o')
+#plt.show()
 
 ###############################################################################
 ## predict condition based on reported symptoms
@@ -181,6 +188,12 @@ bdt = AdaBoostClassifier(DecisionTreeClassifier(max_depth=175),
                          n_estimators=250)
 bdt.fit(X, y)
 
+# Save to file in the current working directory
+model_file = script_path + '/trained_models/condition_model.sav'
+pickle.dump(bdt, open(model_file, 'wb'))
+# Load from file
+bdt = pickle.load(open(model_file, 'rb'))
+
 # test
 all_user_conditions_test = []
 all_user_symptoms_test = []
@@ -202,3 +215,7 @@ for user_id in testing_user_id_cs:
     all_user_symptoms_test.append(user_symtoms_code)
 
 test_score = bdt.score(all_user_symptoms_test, all_user_conditions_test)
+
+# confirm no overlapping training testing
+print(len(np.intersect1d(training_user_id, testing_user_id)))
+print(len(np.intersect1d(training_user_id_cs, testing_user_id_cs)))

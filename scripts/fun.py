@@ -27,7 +27,7 @@ def getProgressionspeed(user_progression):
     datetime = user_progression_sorted['report_date'].to_numpy()
     score = user_progression_sorted['score'].to_numpy()
     m, b = np.polyfit(datetime, score, 1)
-    return m
+    return m, b
 
 # function to get user conditions
 def getConditions(CONDITION_MAP, user_conditions):
@@ -55,3 +55,8 @@ def getSymptomcode (SYMPTOM_MAP, user_symptoms):
         else:
             continue
     return user_symptoms_code
+
+def getConditionname(CONDITION_MAP, condition_code):
+    for key in CONDITION_MAP:
+        if CONDITION_MAP[key] == condition_code:
+            return key

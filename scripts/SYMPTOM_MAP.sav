@@ -1,0 +1,902 @@
+(dp0
+Vdifficulty waking up
+p1
+I279
+sVtingling
+p2
+I287
+sVdouble vision (diplopia)
+p3
+I175
+sVexcess saliva
+p4
+I124
+sVracing heart feeling
+p5
+I248
+sVpanic attacks
+p6
+I63
+sVbuzzing vibration sensation
+p7
+I75
+sVdegenerative disc disease
+p8
+I243
+sVcramps in legs
+p9
+I196
+sVcramps in feet
+p10
+I86
+sVmuscle fatigue
+p11
+I152
+sVtiredness
+p12
+I174
+sVwalking problems
+p13
+I12
+sVHIV-related arthritis
+p14
+I110
+sVtremor in hands
+p15
+I14
+sVcold sensation in hand(s)
+p16
+I207
+sVmouth sores (ulcers)
+p17
+I72
+sVshort term memory problems
+p18
+I178
+sVsleepiness
+p19
+I199
+sVearly morning wakefulness
+p20
+I153
+sVmood
+p21
+I244
+sVasthma
+p22
+I100
+sVdissociation
+p23
+I295
+sVambivalent feelings towards infant
+p24
+I240
+sVswelling in hands
+p25
+I188
+sVwalking difficult without aid
+p26
+I181
+sVmuscle spasms in neck and shoulders
+p27
+I294
+sVacne breakout
+p28
+I288
+sVparanoia
+p29
+I54
+sVfeeling of lump in throat (globus sensation)
+p30
+I277
+sVweakness in hips
+p31
+I247
+sVnerve pain (neuralgia)
+p32
+I36
+sVfoot dragging
+p33
+I163
+sVloss of balance
+p34
+I83
+sVfibro fog
+p35
+I280
+sVspasms
+p36
+I187
+sVperipheral neuritis
+p37
+I87
+sVdizziness and feeling faint
+p38
+I270
+sVdifficulty speaking (dysarthria)
+p39
+I171
+sVcoughing while drinking
+p40
+I158
+sVloss of coordination
+p41
+I113
+sVlightheadedness
+p42
+I164
+sVunrefreshing or poor sleep
+p43
+I28
+sVimpulsivity
+p44
+I209
+sVpainful lymph nodes (glands)
+p45
+I26
+sVdifficulty falling asleep
+p46
+I81
+sVLhermitte's sign
+p47
+I167
+sVmuscle twitching (fasciculations)
+p48
+I104
+sVmuscle spasms
+p49
+I119
+sVclumsiness
+p50
+I184
+sVmuscle and joint pain
+p51
+I147
+sVhallucinations
+p52
+I66
+sVbladder problems
+p53
+I79
+sVdifficulty turning over or moving in bed
+p54
+I256
+sVloss of short term memory
+p55
+I205
+sVsore throat
+p56
+I22
+sVanemia
+p57
+I73
+sVbreathing difficulty
+p58
+I90
+sVchronic pain
+p59
+I77
+sVstomach infection/inflammation
+p60
+I129
+sVavoidance of people
+p61
+I172
+sVbutterfly (malar) rash
+p62
+I239
+sVloneliness
+p63
+I98
+sVelectric shock sensations
+p64
+I269
+sVweakness in neck (head drop)
+p65
+I225
+sVdecreased sex drive (libido)
+p66
+I166
+sVtachycardia (fast heart rate)
+p67
+I216
+sVpain in knee(s)
+p68
+I85
+sVringing in ears (tinnitus)
+p69
+I45
+sVarthritis pain
+p70
+I13
+sVslurred speech
+p71
+I76
+sVelevated blood pressure
+p72
+I38
+sVweight gain
+p73
+I20
+sVeye infection
+p74
+I134
+sVpain
+p75
+I242
+sVflashbacks
+p76
+I35
+sVnose infection
+p77
+I137
+sVneck pain
+p78
+I2
+sVlethargy
+p79
+I58
+sVconstipation
+p80
+I103
+sVburning sensation
+p81
+I43
+sVheartburn
+p82
+I146
+sVtongue tied (decreased verbal fluency)
+p83
+I237
+sVdifficulty staying asleep
+p84
+I5
+sVself harm thoughts or urges
+p85
+I289
+sVheat and cold exacerbate symptoms
+p86
+I74
+sVlipodystrophy (lipoatrophy or loss of fatty tissue)
+p87
+I111
+sVweather or temperature sensitivity
+p88
+I123
+sVrelapse MS (exacerbation)
+p89
+I227
+sVbalance problems
+p90
+I168
+sVjoint stiffness
+p91
+I130
+sVburning sensation in skin
+p92
+I229
+sVwhole body ache
+p93
+I94
+sVtremor in legs
+p94
+I258
+sVcrying
+p95
+I293
+sVirritability
+p96
+I6
+sVincontinence
+p97
+I254
+sVjerky movements
+p98
+I122
+sVvertigo
+p99
+I46
+sVRaynaud's phenomenon
+p100
+I27
+sVtenderness
+p101
+I117
+sVdry skin
+p102
+I211
+sVupset stomach
+p103
+I285
+sVfatigue
+p104
+I220
+sVlimited range of motion
+p105
+I49
+sVpain in back of head
+p106
+I186
+sVpneumonia symptoms
+p107
+I102
+sVinflammation
+p108
+I157
+sVintention tremor
+p109
+I245
+sVhigh cholesterol
+p110
+I70
+sVpersistent cough
+p111
+I125
+sVgeneralized weakness (asthenia)
+p112
+I183
+sVpain in rib
+p113
+I210
+sVeye pain
+p114
+I60
+sVswelling in feet
+p115
+I135
+sVpain in wrist
+p116
+I266
+sVirregular menstrual periods
+p117
+I249
+sVbrain fog
+p118
+I57
+sVstiffness/spasticity
+p119
+I61
+sVpain in upper back
+p120
+I230
+sVdifficulty thinking
+p121
+I106
+sVexcessive daytime sleepiness (somnolence)
+p122
+I99
+sVdifficulty writing (dysgraphia)
+p123
+I127
+sVataxia (lack of coordination)
+p124
+I265
+sVnightmares
+p125
+I25
+sVacid reflux
+p126
+I23
+sVheavy sensation in leg(s)
+p127
+I53
+sVsleep problems
+p128
+I44
+sVlight sensitivity (photophobia)
+p129
+I33
+sVsexual dysfunction
+p130
+I109
+sVloss of sense of smell (anosmia)
+p131
+I215
+sVpain in hip(s)
+p132
+I30
+sVnasal congestion
+p133
+I298
+sVreduced arm swing
+p134
+I116
+sVforgetfulness
+p135
+I89
+sVhyperreflexia
+p136
+I246
+sVnumbness
+p137
+I55
+sVforgetting words
+p138
+I193
+sVnumbness in legs
+p139
+I233
+sVsexually transmitted disease (STD)
+p140
+I138
+sVcramps in calf muscles
+p141
+I41
+sVdeteriorating mental ability (dementia)
+p142
+I274
+sVsleeplessness
+p143
+I283
+sVmuscle weakness
+p144
+I162
+sVmemory problems
+p145
+I219
+sVbowel irritability
+p146
+I17
+sVhair loss
+p147
+I68
+sVshingles rash
+p148
+I78
+sVlow self esteem
+p149
+I180
+sVmemory lapses (brain blinks)
+p150
+I69
+sVabdominal bloating
+p151
+I108
+sVmouth/throat infection
+p152
+I136
+sVsensitivity to sound (hyperacusis)
+p153
+I204
+sVjoint pain in feet
+p154
+I173
+sVitching
+p155
+I291
+sVexcessive yawning
+p156
+I191
+sVcold intolerance
+p157
+I29
+sVnoise intolerance
+p158
+I149
+sVflu like symptoms
+p159
+I236
+sVdepressed mood
+p160
+I223
+sVself injury or harm
+p161
+I234
+sVpain in feet
+p162
+I170
+sVpain in lower back
+p163
+I132
+sVcognitive impairment
+p164
+I232
+sVinability to handle stress (bad stress reactions)
+p165
+I185
+sVbruiselike feeling under skin
+p166
+I273
+sVhearing problems
+p167
+I190
+sVword fishing
+p168
+I11
+sVweakness in left leg
+p169
+I284
+sVcramps
+p170
+I176
+sVanxious mood
+p171
+I222
+sVflight of ideas
+p172
+I9
+sVslowed thinking
+p173
+I275
+sVslower gait
+p174
+I48
+sVdry mouth
+p175
+I101
+sVfingers curling
+p176
+I192
+sVracing thoughts
+p177
+I250
+sVatrophy of calf muscles
+p178
+I290
+sVblurry vision
+p179
+I16
+sVchoking on food
+p180
+I142
+sVfear of embarrassment
+p181
+I202
+sVatrophy of hand muscles
+p182
+I131
+sVenlarged thyroid (goiter)
+p183
+I297
+sVvoice changes
+p184
+I200
+sVsciatic nerve pain
+p185
+I238
+sVdifficulty bonding with infant
+p186
+I276
+sVweakness in arm(s)
+p187
+I51
+sVjoint crackling (crepitus)
+p188
+I50
+sVfeelings of hopelessness
+p189
+I179
+sVexhaustion
+p190
+I32
+sVpersistent worrying
+p191
+I286
+sVdeadened emotions
+p192
+I226
+sVTMJ (temporomandibular joint) pain
+p193
+I0
+sVear infection
+p194
+I121
+sVbowel problems
+p195
+I95
+sVurinary urgency
+p196
+I155
+sVmood swings
+p197
+I96
+sVsensitivity to loud sounds
+p198
+I160
+sVburning sensation in soles of feet
+p199
+I198
+sVdry throat
+p200
+I214
+sVstiffness in neck
+p201
+I159
+sVsuicidal thoughts or urges
+p202
+I133
+sVcramps in hands
+p203
+I213
+sVHIV related neurological symptoms
+p204
+I105
+sVbrain lesions
+p205
+I64
+sVcold sensation in lower leg(s)
+p206
+I296
+sValcohol cravings
+p207
+I235
+sVswallowing difficulty (dysphagia)
+p208
+I62
+sVteeth grinding (bruxism)
+p209
+I189
+sVgrowths or tumors (dysplasia)
+p210
+I182
+sVdepression with anxiety
+p211
+I194
+sVseizures (grand mal or tonic-clonic)
+p212
+I255
+sVgrandiose thinking
+p213
+I18
+sVbladder infection
+p214
+I126
+sVexcitability
+p215
+I15
+sVlosing train of thought
+p216
+I21
+sVself isolation
+p217
+I252
+sVvitamin D deficiency
+p218
+I71
+sVpins and needles in feet and legs
+p219
+I231
+sVtrigeminal neuralgia
+p220
+I197
+sVloss of manual dexterity
+p221
+I97
+sVheightened sense of smell (hyperosmia)
+p222
+I259
+sVvivid dreams
+p223
+I177
+sVheat intolerance
+p224
+I7
+sVspeech problems
+p225
+I151
+sVsuicidal
+p226
+I156
+sVcognitive confusion
+p227
+I59
+sVnumbness in feet
+p228
+I65
+sVoptic nerve inflammation (optic neuritis)
+p229
+I165
+sVpain in hands
+p230
+I203
+sVmuscle aches
+p231
+I218
+sVhot flashes
+p232
+I143
+sVsocial anxiety
+p233
+I114
+sVvision problems
+p234
+I128
+sVpain in ear
+p235
+I292
+sVjoint pain
+p236
+I47
+sVdifficulty projecting voice
+p237
+I224
+sVjumpiness (startling easily)
+p238
+I31
+sVincreased rate of speech
+p239
+I257
+sVyeast infection (candida)
+p240
+I115
+sVbrain infection
+p241
+I140
+sVheavy sensation in arm(s)
+p242
+I268
+sVpain in shoulder(s)
+p243
+I3
+sVherpes outbreak
+p244
+I107
+sVanger
+p245
+I169
+sVmuscle pain
+p246
+I42
+sVeye muscle twitching (fasciculations)
+p247
+I201
+sVrestless feeling in legs
+p248
+I8
+sVstiffness in legs
+p249
+I267
+sVchoking on liquids
+p250
+I148
+sVnumbness in face
+p251
+I217
+sVallergies
+p252
+I10
+sVskin sensitive to touch
+p253
+I120
+sVnumbness and tingling with pins and needles
+p254
+I1
+sVstiffness in knees
+p255
+I228
+sVself hating thoughts
+p256
+I195
+sVcommon cold
+p257
+I118
+sVslow speech (bradyarthria)
+p258
+I161
+sVUTI symptoms
+p259
+I82
+sVexcessive sweating
+p260
+I145
+sVstiffness in morning
+p261
+I93
+sVloss of energy
+p262
+I221
+sVfever
+p263
+I241
+sVmigraine headaches
+p264
+I24
+sVstiffness
+p265
+I251
+sVnumbness and tingling in hands
+p266
+I278
+sVneck bones clicking
+p267
+I208
+sVeye floaters
+p268
+I141
+sVsocial withdrawal
+p269
+I271
+sVfalls
+p270
+I84
+sVawakening due to pain
+p271
+I91
+sVcold sensation in feet
+p272
+I37
+sVweakness in leg(s)
+p273
+I4
+sVpain in leg(s)
+p274
+I144
+sVlack of motivation
+p275
+I56
+sVtemperature dysregulation
+p276
+I263
+sVfoot drop
+p277
+I52
+sVcoughing while eating
+p278
+I154
+sVjaw pain
+p279
+I281
+sVanxiety and frustration
+p280
+I112
+sVseizures
+p281
+I206
+sVstress
+p282
+I92
+sVswelling in legs, feet and ankles
+p283
+I19
+sVtremor(s)
+p284
+I80
+sVMS hug (tight chest or torso)
+p285
+I39
+sVobstructive sleep apnea
+p286
+I262
+sVhot and cold flashes
+p287
+I264
+sVavoidance of challenges and stress
+p288
+I272
+sVbreakthrough pain
+p289
+I282
+sVabdominal cramps
+p290
+I139
+sVweakness in hands
+p291
+I88
+sVchest pain
+p292
+I212
+sVemotional lability
+p293
+I67
+sVmuscle spasms in legs at night
+p294
+I299
+sVnumbness in hands
+p295
+I40
+sVnumbness in arm(s)
+p296
+I260
+sVurinary incontinence
+p297
+I253
+sVjoint pain in hands
+p298
+I150
+sVpelvic pain
+p299
+I261
+sVdry eyes
+p300
+I34
+s.
