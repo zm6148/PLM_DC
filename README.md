@@ -5,7 +5,7 @@
 ## Table of Contents
 
 1. [Usage](README.md#Usage)
-1. [System](README.md#System)
+1. [Methods and Results](README.md#Methods-and-Results)
 1. [Setup](README.md#setup)
 1. [Run the system](README.md#run-the-system)
 1. [Contact Information](README.md#contact-information)
