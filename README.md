@@ -30,7 +30,7 @@ For question 1, where I want to predict deterioration speed based on user's exis
 For all data from testing user ids, the results is shown below.
 ![q1_png](./test_scripts/q1.png)
 
-For question 1, where I want medical conditions to be predicted based on the user's reported symptoms. There are 6536 unique symptoms in the dataset. Similar method as question 1 was used to build training data set, a matrix consisted of symptom severity score (15591 * 300 matrix) was used to encode symptoms for each user. I only picked the top 300 most common symptoms to train a Decision Tree Classifier with 250 tree stumps caped at 175 deepth trained in sequence. This classifier was trained on users with only 1 conditions, and can only predict 1 condition even though test user may have multiple conditions
+For question 2, where I want medical conditions to be predicted based on the user's reported symptoms. There are 6536 unique symptoms in the dataset. Similar method as question 1 was used to build training data set, a matrix consisted of symptom severity score (15591 * 300 matrix) was used to encode symptoms for each user. I only picked the top 300 most common symptoms to train a Decision Tree Classifier with 250 tree stumps caped at 175 deepth trained in sequence. This classifier was trained on users with only 1 conditions, and can only predict 1 condition even though test user may have multiple conditions
 
 When tested on data associated with testing user ids, the accuracy is 68%. The detailed results are shown below.
 ![q2_png](./test_scripts/q2.png)
