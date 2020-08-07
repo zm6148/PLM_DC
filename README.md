@@ -4,10 +4,10 @@
 
 ## Table of Contents
 
-1. [Usage](README.md#Usage)
+1. [Summaty](README.md#Summaty)
 1. [Methods and Results](README.md#Methods-and-Results)
-1. [Setup](README.md#setup)
-1. [Run the system](README.md#run-the-system)
+1. [Instruction](README.md#Instruction)
+1. [If I had more time](README.md#If-I-had-more-time)
 1. [Contact Information](README.md#contact-information)
 
 ***
