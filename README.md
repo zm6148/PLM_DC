@@ -4,11 +4,11 @@
 
 ## Table of Contents
 
-1. [Summary](README.md#Summary)
-1. [Methods and Results](README.md#Methods and Results)
-1. [Instruction](README.md#Instruction)
-1. [If I had more time](README.md#If I had more time)
-1. [Contact Information](README.md#Contact Information)
+1. [Usage](README.md#Usage)
+1. [System](README.md#System)
+1. [Setup](README.md#setup)
+1. [Run the system](README.md#run-the-system)
+1. [Contact Information](README.md#contact-information)
 
 ***
 
@@ -34,7 +34,6 @@ For question 1, where I want to medical condtions be predicted based on the user
 
 When tested on data accosicated with testing user ids, the accuracy is 68%. The detials results are shown below![system_png](./img/ezgif.com-video-to-gif(2).gif)
 ![q2_png](./test_scripts/q2.png)
-![system_png](./test_scripts/q2.png)
 
 ---
 ## Instruction
