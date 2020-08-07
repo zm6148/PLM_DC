@@ -1,6 +1,6 @@
 # PLM data challegne
 
-> [App address](https://www.dataengineermz.club)
+> [App address](dataengineermz.club/)
 
 ## Table of Contents
 
