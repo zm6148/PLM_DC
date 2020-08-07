@@ -37,13 +37,19 @@ When tested on data accosicated with testing user ids, the accuracy is 68%. The 
 
 ---
 ## Instruction
+Figure 1:
+To predict progression speed, select the user Id from the drop down bar. Those user ids are from test user ids. It will load data from user_condition table to predict progression slop.
 
-df
+Figure 2:
+To predict user condition, select the user Id from the drop down bar. Those user ids are from test user ids. It will load data from user_symptom table to predict user's conditions
 
 ---
 ## If I had more time
+I spent Wedesday and Thursday on the data challenge. Here are the areas, I think I could improve:
+1. More complicated model to preict progression slop, taking into symptom information if possible
+2. To prerdict mulitple conditions instead of only one for induvual user.
 
-
+---
 ## Contact Information
 
 * [LinkedIn](https://www.linkedin.com/in/zm6148)
