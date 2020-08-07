@@ -1,70 +1,45 @@
 # PLM data challegne
 
-> [App address](http://dataengineermz.club/)
+> Prediction on test data results can be visulized here: [Web app address](http://dataengineermz.club/)
 
 ## Table of Contents
 
-1. [Summary](README.md#Usage)
-1. [Methods](README.md#System)
-1. [Instruction](README.md#setup)
-1. [Contact Information](README.md#contact-information)
+1. [Summary](README.md#Summary)
+1. [Methods and Results](README.md#Methods and Results)
+1. [Instruction](README.md#Instruction)
+1. [If I had more time](README.md#If I had more time)
+1. [Contact Information](README.md#Contact Information)
 
 ***
 
-## Usage
+## Summaty
 
-This project aims to provide users the live update of traffic patterns (detailed counts of different types of vehicles at major junctions). This information would be useful to daily commuters and add to currently available traffic speed data for traffic planners.
+For this data challege, I tried to answer the following 2 questions:
+1. Can the deteration speed be predicted based on the user's exsiting condtions?
+2. Can the medical condtions be predicted based on the user's reported symptoms?
 
-In addition to live updates, this project also records historical data.
-- Historical traffic counts at all junctions (last hour, day, week).
-- Detailed traffic breakdown at user selected junctions (last hour, day, week).
+Idealy, I would want to link those questions together. However, in the data I was given, there are only 16 common user_ids between user_ALSFRS_score data and user_symptom data, too few to train models that can relaybley link those two. I chose the above 2 questions instead.
 
-![Demo_gif](./img/ezgif.com-video-to-gif(1).gif)
-
-For example the traffic condition along I-95 in Bronx NY.
+For both questions, I seprated user ids into training ids and testing ids. All models were developed using data associated with training user ids only(177 users for question 1, 29458 for question 2). The model will only see the data from testing id when using the Web App.
 
 ---
-## System
+## Methods
 
-This data pipeline takes in live video streams from traffic cams and dedicates 1 computing resource (t2.medium) performing data extraction using computer vision (neural net implemented in OpenCV) analysis for 4 traffic cam footages. After the data extraction stage, the extracted traffic information is fed to a Kafka data stream for temporary storage and queuing. A kafka consumer aggregates the data and saves it to a database. The flask front end displays the data in real-time.
+For question 1, where I want to predict deetration speed based on user's existing condition. I defined the deetarion speed as the slop of the linear fit of idndividual user's ALSFRS score. I built a general linear model (GLM) using user conditions to build the regression matrix: 20 unique conditions, each conditon as a columnm of 0 and 1s, with 1s marking the presence of one condition (177 * 20 matrix). The trained model was used on tesing user ids to predict the slop on an indivual user bases. 
 
-![system_png](./img/ezgif.com-video-to-gif(2).gif)
+For all data from testing user ids, the results is shown below
+![q1_png](./test_script/q1.png)
 
+For question 1, where I want to medical condtions be predicted based on the user's reported symptoms. There are 6536 unique symtoms in the dataset. Similar method as question 1 was used to build training data set, a matrix consisited of symtom svertivy score (15591 * 300 matrix) was used to encode symtopms for each user. I only picked top 300 most common symptoms to train a Decision Tree Classifier with 250 tree stumps caped at 175 deepth trained in sequence. This classifier was trained on users with only 1 condtions, thus can only predict 1 conditons even though test user may have multiple conditions
+
+When tested on data accosicated with testing user ids, the accuracy is 68%. The detials results are shown below![system_png](./img/ezgif.com-video-to-gif(2).gif)
+![q2_png](./test_script/q2.png)
 
 ---
-## Setup
+## Instruction
 
-This pipeline requires 16 AWS EC2s. [Pegasus](https://github.com/InsightDataScience/pegasus) was used to set up multiple EC2s easier.
+df
 
-For each EC2, clone this repository
-
-```
-git clone https://github.com/zm6148/2020_insight_de_traffic.git
-```
-and run the requiements.sh to install required technologies.
-
-```
-bash requirements.sh
-```
-
-
-## Start the pipline
-
-#### Strat data analysis EC2
-At each 14 data extraction EC2s
-```
-python3 2020_insight_de_traffic/kafka_producer/src/multi_kafka_producer_3_cams.py &
-```
-#### Strat kafka consumer EC2
-At kakfa consumer EC2
-```
-python3 2020_insight_de_traffic/dash/src/msk_consumer_save_direct.py &
-```
-#### Strat front end EC2
-At front end EC2
-```
-python3 2020_insight_de_traffic/dash/src/app_database_v2.py &
-```
 
 ## Contact Information
 
