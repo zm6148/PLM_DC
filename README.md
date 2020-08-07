@@ -25,7 +25,7 @@ For both questions, I separated user ids into training ids and testing ids. All 
 ---
 ## Methods and Results
 
-For question 1, where I want to predict deetration speed based on user's existing condition. I defined the deetarion speed as the slope of the linear fit of an individual user's ALSFRS score. I built a general linear model (GLM) using user conditions to build the regression matrix: 20 unique conditions, each condition as a column of 0 and 1s, with 1s marking the presence of one condition (177 * 20 matrix). The trained model was used on testing user ids to predict the slope on an individual user base.
+For question 1, where I want to predict deterioration speed based on user's existing condition. I defined the deterioration speed as the slope of the linear fit of an individual user's ALSFRS score. I built a general linear model (GLM) using user conditions to build the regression matrix: 20 unique conditions, each condition as a column of 0 and 1s, with 1s marking the presence of one condition (177 * 20 matrix). The trained model was used on testing user ids to predict the slope on an individual user base.
 
 For all data from testing user ids, the results is shown below.
 ![q1_png](./test_scripts/q1.png)
