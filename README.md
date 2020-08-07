@@ -28,12 +28,12 @@ For both questions, I seprated user ids into training ids and testing ids. All m
 For question 1, where I want to predict deetration speed based on user's existing condition. I defined the deetarion speed as the slop of the linear fit of idndividual user's ALSFRS score. I built a general linear model (GLM) using user conditions to build the regression matrix: 20 unique conditions, each conditon as a columnm of 0 and 1s, with 1s marking the presence of one condition (177 * 20 matrix). The trained model was used on tesing user ids to predict the slop on an indivual user bases. 
 
 For all data from testing user ids, the results is shown below
-![q1_png](./test_script/q1.png)
+![q1_png](./test_scripts/q1.png)
 
 For question 1, where I want to medical condtions be predicted based on the user's reported symptoms. There are 6536 unique symtoms in the dataset. Similar method as question 1 was used to build training data set, a matrix consisited of symtom svertivy score (15591 * 300 matrix) was used to encode symtopms for each user. I only picked top 300 most common symptoms to train a Decision Tree Classifier with 250 tree stumps caped at 175 deepth trained in sequence. This classifier was trained on users with only 1 condtions, thus can only predict 1 conditons even though test user may have multiple conditions
 
 When tested on data accosicated with testing user ids, the accuracy is 68%. The detials results are shown below![system_png](./img/ezgif.com-video-to-gif(2).gif)
-![q2_png](./test_script/q2.png)
+![q2_png](./test_scripts/q2.png)
 
 ---
 ## Instruction
