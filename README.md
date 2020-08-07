@@ -44,10 +44,10 @@ Figure 2:
 To predict user condition, select the user Id from the drop down bar. Those user ids are from test user ids. It will load data from user_symptom table to predict user's conditions
 
 All my scripts are in the scripts folder.
-das_app.py is the web app script, it also has the model implementation.
-fishing_trip.py is the data exploration and model training script, trained modeled saved to trained_models folder.
-fun.py has the helper functions.
-training_testing_ids folder has the pre-separated training and testing ids.
+1. das_app.py is the web app script, it also has the model implementation.
+2. fishing_trip.py is the data exploration and model training script, trained modeled saved to trained_models folder.
+3. fun.py has the helper functions.
+4. training_testing_ids folder has the pre-separated training and testing ids.
 
 ---
 ## If I had more time
