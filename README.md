@@ -23,7 +23,7 @@ Idealy, I would want to link those questions together. However, in the data I wa
 For both questions, I seprated user ids into training ids and testing ids. All models were developed using data associated with training user ids only(177 users for question 1, 29458 for question 2). The model will only see the data from testing id when using the Web App.
 
 ---
-## Methods
+## Methods and Results
 
 For question 1, where I want to predict deetration speed based on user's existing condition. I defined the deetarion speed as the slop of the linear fit of idndividual user's ALSFRS score. I built a general linear model (GLM) using user conditions to build the regression matrix: 20 unique conditions, each conditon as a columnm of 0 and 1s, with 1s marking the presence of one condition (177 * 20 matrix). The trained model was used on tesing user ids to predict the slop on an indivual user bases. 
 
@@ -39,6 +39,9 @@ When tested on data accosicated with testing user ids, the accuracy is 68%. The 
 ## Instruction
 
 df
+
+---
+## If I had more time
 
 
 ## Contact Information
