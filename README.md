@@ -34,6 +34,7 @@ For question 1, where I want to medical condtions be predicted based on the user
 
 When tested on data accosicated with testing user ids, the accuracy is 68%. The detials results are shown below![system_png](./img/ezgif.com-video-to-gif(2).gif)
 ![q2_png](./test_scripts/q2.png)
+![system_png](./test_scripts/q2.png)
 
 ---
 ## Instruction
