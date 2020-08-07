@@ -1,6 +1,6 @@
 # PLM data challenge
 
-> Prediction results on test data can be visualized here: [Web app address](http://dataengineermz.club/)
+> Prediction results on test data can be visualized here: [Web app](http://dataengineermz.club/)
 
 ## Table of Contents
 
